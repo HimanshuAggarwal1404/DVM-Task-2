@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<script src="script2.js"></script>
+
+<body>
+    <div class="background">
+        <nav class="navbar ">
+            <ul class="nav-list">
+                <li>
+                    <div class="logo"><a href="https://www.bits-apogee.org/"><img src="img/download.jpeg" alt="APOGEE"
+                                height="60"></a></div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="NewEntry.html">New Registration</a></li>
+
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="bg ">
+            <div class="dvm">
+                <div class="img">
+                    <img src="img/14038814.jpeg" alt="dvm" , height="100">
+                </div>
+                <div class="nt"></div>
+                <div class="dvmtext">DEPARTMENT OF VISUAL MEDIA, BITS Pilani</div>
+
+            </div>
+            <div class="text">Want to get in touch? We'd love to hear from you. Contact us using any of the methods
+                mentioned or fill the form below</div>
+            <div class="maincontent">
+                <div class="grida">
+                    <div class="contact">
+                        <div class="mail">
+                            E-Mail: f202x0xxx@pilani.bits-pilani.ac.in
+                        </div>
+                        <div class="phone">
+                            Phone: 98089xxxxx
+                        </div>
+                    </div>
+                    <form action="contact.php" , name="Myform2" , onsubmit="return validateforma()" , method="post">
+                        <div class="form">
+                            <div> <input type="text" name="fname" id="fname" , placeholder="First Name" required><input
+                                    type="text" name="lname" id="lname" , placeholder="Last Name" required></div>
+
+                            <div id="bitsid"><input type="text" name="id" id="id" , placeholder="BITS ID"
+                                    required><b><span class="formerror"></span></b></div>
+
+                            <div id="contact"><input type="text" name="number" id="number" , placeholder="Contact No."
+                                    required><b><span class="formerror"></span></b></div>
+
+                            <div><input type="text" name="desc" id="desc" , placeholder="What do you wish us to know?"
+                                    required></div>
+
+                            <div><button type="submit">Submit</button> <button type="reset">Reset</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="end">&#169; Copyright 2022 DVM, BITS Pilani, All Rights Reserved</div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="script2.js"></script>
+
+</html>
