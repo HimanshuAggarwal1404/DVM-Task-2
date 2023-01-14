@@ -306,7 +306,7 @@ button:focus {
     }
 } */
 
-@media(max-width:500px) {
+@media(max-width:530px) {
     html {
         font-size: 60%;
     }
