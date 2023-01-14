@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration</title>
+    <link rel="stylesheet" href="newentrystyle.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+    <div class="background">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li>
+                    <div class="logo"><a href="https://www.bits-apogee.org/"><img src="img/download.jpeg" alt="APOGEE"
+                                style="width: 4rem;" /> </a></div>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="NewEntry.html">New Registration</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="text">
+            <div class="big">
+                <b>REGISTRATIONS FOR A NEW EVENT ARE NOW OPEN!</b>
+            </div>
+            <div class="small1">
+                Fill out the form below
+            </div>
+            <div class="caution">
+                <u>Caution:Carefully fill out all details as details mentioned below will be used for all
+                    further communications, notices, etc. No correction will be entertained after this form is
+                    filled.</u>
+            </div>
+        </div>
+        <div class="regform"><b>REGISTRATIONS FORM</b></div>
+        <div class="centre">
+            <form action="" , name="Myform" , onsubmit="return validateform()" , onsubmit=collectdata() , method="post">
+
+                <!-- <div class="form">
+                    
+
+                </div> -->
+                <div id="name">
+                    <label for="aname">Event's Name: </label>
+                    <br>
+                    <input style="width: 25vw; margin: 2px solid black" type="text" , name="fname" , id="fname"
+                        placeholder="Enter the Event's Name" required> <b><span class="formerror"></span></b>
+                </div>
+                <div id="dept">
+                    <label for="fdept">Organising Department: </label>
+                    <br>
+                    <select name="fdept" id="fdept" required><b><span class="formerror"></span></b>
+                        <option value="none" disabled selected>Select Department/Assoc/Club</option>
+                        <option value="Department of Visual Media">Department of Visual Media</option>
+                        <option value="Department of Live Events">Department of Live Events</option>
+                        <option value="ACM">ACM</option>
+                        <option value="IEEE">IEEE</option>
+                        <option value="Computer Science Association">Computer Science Association</option>
+                        <option value="Mathematics Association">Mathematics Association</option>
+                        <option value="Chemical Engineering Association">Chemical Engineering Association</option>
+                        <option value="EEE Association">EEE Association</option>
+                        <option value="Civil Engineering Association">Civil Engineering Association</option>
+                        <option value="Mechanical Engineering Association">Mechanical Engineering Association
+                        </option>
+                        <option value="Pharmacy Association">Pharmacy Association</option>
+                        <option value="Manufacturing Engineering Association">Manufacturing Engineering Association
+                        </option>
+                        <option value="Biological Association">Biological Association</option>
+                        <option value="Chemistry Association">Chemistry Association</option>
+                        <option value="Economics and Finance Association">Economics and Finance Association</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Physics Association">Physics Association</option>
+                        <option value="Wall Street Club">Wall Street Club</option>
+                        <option value="Toastmasters Club">Toastmasters Club</option>
+                        <option value="RadioAktiv Club">RadioAktiv Club</option>
+                        <option value="Music Club">Music Club</option>
+                        <option value="Hindi Activities Society(HAS)">Hindi Activities Society(HAS)</option>
+                        <option value="Gaming Club">Gaming Club</option>
+                        <option value="BITSMUN">BITSMUN</option>
+                        <option value="English Language Activities Society(ELAS)">English Language Activities
+                            Society(ELAS)
+                        </option>
+                        <option value="Embryo Club">Embryo Club</option>
+                        <option value="DebSoc Club">DebSoc Club</option>
+                        <option value="Astro Club">Astro Club</option>
+                        <option value="Karaoke Club">Karaoke Club</option>
+                        <option value="Comedy Club">Comedy Club</option>
+                        <option value="Communo">Communo</option>
+                    </select>
+                </div>
+                <div id="desc">
+                    <label for="desc">Enter event description:</label>
+                    <br>
+                    <input style="width: 25vw;margin: 2px solid black" type="text" name="fdesc" id="fdesc" ,
+                        placeholder="Enter a short description of the event"><b><span class="formerror"></span></b>
+                </div>
+                <div id="venue">
+                    <label for="venue">Enter Venue:</label>
+                    <br>
+                    <input style="width: 25vw;margin: 2px solid black" type="text" name="fvenue" id="fvenue" ,
+                        placeholder="Enter the venue"><b><span class="formerror"></span></b>
+                </div>
+                <div id="personname">
+                    <label for="personname">Person to be Contacted: </label>
+                    <br>
+                    <input style="width: 25vw;margin: 2px solid black" type="text" , name="fpersonname" ,
+                        id="fpersonname" , placeholder="Enter the name of Person to be contacted" required><b><span
+                            class="formerror"></span></b>
+                </div>
+                <div id="bitsid">
+                    <label for="bitsid">BITS ID: </label>
+                    <br>
+                    <input style="width: 25vw; margin: 2px solid black" type="text" , name="fbitsid" , id="fbitsid" ,
+                        placeholder="Enter the BITS ID of person mentioned" required><b><span
+                            class="formerror"></span></b>
+                </div>
+                <div id="mail">
+                    <label for="mail">BITS E-Mail: </label>
+                    <br>
+                    <input style="width: 25vw;" type="email" name="fmail" id="fmail" ,
+                        placeholder="Enter BITS Mail ID of the person mentioned" required><b><span
+                            class="formerror"></span></b>
+                </div>
+                <div id="phone">
+                    <label for="phone">Contact No.: </label>
+                    <br>
+                    <input style="width: 25vw; margin: 2px solid black" type="text" , name="fphone" , id="fphone" ,
+                        placeholder="Enter the Contact Number of person mentioned" required><b><span
+                            class="formerror"></span></b>
+                </div>
+                <div id="preregistered">
+                    Participant Registrations:
+                    <br>
+                    <label for="preregistered">Pre-registered</label>
+
+                    <input type="checkbox" , name="fpreregistered" , id="fpreregsitered"><b><span
+                            class="formerror"></span></b>
+                    <span class="none">abcd</span>
+                    <label for="onspot">On-the-spot Registrations</label>
+                    <input type="checkbox" , name="fonspot" , id="fonspot"><b><span class="formerror"></span></b>
+                </div>
+
+                <div id="free">
+                    Is event paid or free:
+                    <br>
+                    <label for="free">Free</label>
+
+                    <input type="radio" name="ftype" id="ffree"><b><span class="formerror"></span></b>
+                    <span class="none">abcdefg</span>
+                    <label for="paid">Paid</label>
+                    <input type="radio" , name="ftype" , id="fpaid"><b><span class="formerror"></span></b>
+                </div>
+
+                <div id="sdatetime">
+                    <label for="sdatetime">Starting Date and Time </label>
+                    <br>
+                    <input type="datetime-local" , name="fsdatetime" , id="fsdatetime" required><b><span
+                            class="formerror"></span></b>
+                </div>
+                <div id="edatetime">
+                    <label for="edatetime">Ending Date and Time </label>
+                    <br>
+                    <input type="datetime-local" , name="fedatetime" , id="fedatetime" required><b><span
+                            class="formerror"></span></b>
+                </div>
+                <div id="amount">
+                    <label for="amount">Registrations Amount(if Paid)</label>
+                    <br>
+                    <input style="width: 20vw; margin: 2px solid black;" type="number" , name="famount" , id="famount" ,
+                        placeholder="Enter Registration Amount"><b><span class="formerror"></span></b>
+                    
+                </div>
+                <div class="abc"></div>
+                <div class="abc"></div>
+                <div class="abc"></div>
+                <div class="abc"></div>
+                <div id="btn"><button type="submit">Submit</button> <button type="reset">Reset</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="list">
+            <span class="name"></span>
+            <span class="phone"></span>
+        </div>
+        <hr>
+        <div class="end">&#169; Copyright 2022 DVM, BITS Pilani, All Rights Reserved</div>
+
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
