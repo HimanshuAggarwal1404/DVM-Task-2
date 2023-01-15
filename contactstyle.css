@@ -1,0 +1,279 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital@1&family=DM+Sans&display=swap');
+
+.navbar {
+    margin: 0rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nav-list {
+    margin: 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0;
+    list-style: none;
+    margin: 0.2125rem 0.46875rem 0rem 0.9375rem;
+    font-size: 0.979rem;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(img/bitsp.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.maincontent {
+
+    padding: 0.89rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 27.645rem;
+    width: 89.0625rem;
+
+}
+
+.dvm {
+    padding: 0.89rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nt {
+    width: 0.9375rem;
+}
+
+.dvmtext {
+    color: white;
+    font-size: 2.225rem;
+}
+
+.text {
+    display: flex;
+    color: white;
+    font-size: 1.335vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail {
+    /* margin-top: 23.3vh; */
+    color: white;
+    padding: 0.5vw;
+    margin-left: 2.5vw;
+    font-size: 1.335rem;
+    font-family: 'Andika', sans-serif;
+
+}
+
+.phone {
+    color: white;
+    padding: 0.5vw;
+    margin-left: 2.5vw;
+    font-size: 1.335rem;
+    /* margin-bottom: 21.45vh; */
+    font-family: 'Andika', sans-serif;
+
+}
+
+hr {
+    position: relative;
+    top: 0.125rem;
+    border: none;
+    height: 0.125rem;
+    background: white;
+
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2675rem;
+    padding: 0.8rem;
+    color: white;
+
+}
+
+.grida {
+    /* margin-top: 23.3vh; */
+    /* margin-bottom: 21.45vh; */
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 89.0625rem;
+}
+
+.contact {
+    width: 44.0625rem;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    padding: 0.89rem;
+    width: 42.1875rem;
+    border: solid 0.1875rem white;
+
+}
+
+input#fname,
+input#lname {
+    width: 20.53125rem;
+    height: 3.115rem;
+
+}
+
+input#id,
+input#number {
+    width: 41.25rem;
+    height: 3.115rem;
+}
+
+input#desc {
+    width: 41.25rem;
+    height: 7.675rem;
+}
+
+.formerror {
+    color: red;
+}
+@media(max-width:1425px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media(max-width:1350px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media(max-width:1275px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media(max-width:1200px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width:1125px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media(max-width:1050px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media(max-width:975px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media(max-width:900px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media(max-width:825px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:750px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width:675px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media(max-width:600px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media(max-width:525px) {
+    html {
+        font-size: 60%;
+    }
+    .grida{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/* @media(max-width:450px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media(max-width:375px) {
+    html {
+        font-size: 25%;
+    }
+}
+
+@media(max-width:300px) {
+    html {
+        font-size: 20%;
+    }
+}
+
+@media(max-width:225px) {
+    html {
+        font-size: 15%;
+    }
+}
+
+@media(max-width:150px) {
+    html {
+        font-size: 10%;
+    }
+}
+
+@media(max-width:75px) {
+    html {
+        font-size: 5%;
+    }
+} */
